@@ -38,6 +38,28 @@
   transform: rotate(45deg);
 }
 
+.Cut-Diamond {
+  border-style: solid;
+  border-color: transparent transparent #EFD3F6 transparent;
+  border-width: 0 25px 25px 25px;
+  height: 0;
+  width: 50px;
+  box-sizing: content-box;
+  position: relative;
+  top: -40px;
+}
+.Cut-Diamond:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #EFD3F6 transparent transparent transparent;
+  border-width: 70px 50px 0 50px;
+}
+
 .Diamond {
   width: 0;
   height: 0;
@@ -55,6 +77,14 @@
   left: -29px;
   position: absolute;
   top: 50px;
+}
+
+.Egg {
+  display: block;
+  width: 56px;
+  height: 80px;
+  background-image: linear-gradient(pink, yellow, lime, #E2A9F3);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
 .Heart {
@@ -113,6 +143,30 @@
 
 .Logo {
   height: 60px;
+}
+
+.Magnifying-Glass {
+  font-size: 10em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #7E7C7E;
+  position: relative;
+  border-radius: 0.35em;
+  left: 90px;
+}
+.Magnifying-Glass:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background: #7E7C7E;
+  width: 0.35em;
+  height: 0.08em;
+  transform: rotate(45deg);
 }
 
 .Octagon {
@@ -200,6 +254,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Space-Invader {
+  box-shadow: 0 0 0 1em red,
+  0 1em 0 1em red,
+  -2.5em 1.5em 0 .5em red,
+  2.5em 1.5em 0 .5em red,
+  -3em -3em 0 0 red,
+  3em -3em 0 0 red,
+  -2em -2em 0 0 red,
+  2em -2em 0 0 red,
+  -3em -1em 0 0 red,
+  -2em -1em 0 0 red,
+  2em -1em 0 0 red,
+  3em -1em 0 0 red,
+  -4em 0 0 0 red,
+  -3em 0 0 0 red,
+  3em 0 0 0 red,
+  4em 0 0 0 red,
+  -5em 1em 0 0 red,
+  -4em 1em 0 0 red,
+  4em 1em 0 0 red,
+  5em 1em 0 0 red,
+  -5em 2em 0 0 red,
+  5em 2em 0 0 red,
+  -5em 3em 0 0 red,
+  -3em 3em 0 0 red,
+  3em 3em 0 0 red,
+  5em 3em 0 0 red,
+  -2em 4em 0 0 red,
+  -1em 4em 0 0 red,
+  1em 4em 0 0 red,
+  2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 95px;
 }
 
 .Spin-Slow {

@@ -28,7 +28,10 @@ function App() {
       <div className="Octagon Spacing" alt="Black Octagon"></div>
       <div className="Heart Spacing" alt="Purple Heart"></div>
       <div className="Diamond Spacing" alt="Blue Diamond"></div>
-
+      <div className="Cut-Diamond Spacing" alt="Pale Purple Cut Diamond"></div>
+      <div className="Egg Spacing" alt="Easter Egg"></div>
+      <div className="Space-Invader Spacing" alt="Red Eight bit pixel space invader"></div>
+      <div className="Magnifying-Glass Spacing" alt="Magnifying Glass Symbol"></div>
     </div>
   );
 }
