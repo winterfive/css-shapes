@@ -27,6 +27,7 @@ function App() {
       <div className="Hexagon Spacing" alt="Blue Hexagon"></div>
       <div className="Octagon Spacing" alt="Black Octagon"></div>
       <div className="Heart Spacing" alt="Purple Heart"></div>
+      <div className="Diamond Spacing" alt="Blue Diamond"></div>
 
     </div>
   );
