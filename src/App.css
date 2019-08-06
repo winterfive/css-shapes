@@ -38,10 +38,35 @@
   transform: rotate(45deg);
 }
 
-.Hexagon {
+.Heart {
+  position: relative;
   width: 100px;
-  height: 55px;
+  height: 90px;
+}
+.Heart:before,
+.Heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: linear-gradient(to right, red 85%, blue);
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.Heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+
+.Hexagon {
   background: #3D85F4;
+  height: 55px;
+  width: 100px;  
   position: relative;
 }
 .Hexagon:before {
@@ -72,7 +97,7 @@
 }
 
 .Octagon {
-  width: 98px;
+  width: 96px;
   height: 40px;
   background: #000;
   position: relative;
