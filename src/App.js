@@ -5,9 +5,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      <img src={logo} className="App-logo Shape" alt="logo" />
+      <div className="Square Shape" alt="Blue Square"></div>
     </div>
   );
 }
