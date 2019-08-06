@@ -1,31 +1,72 @@
 .App {
-  text-align: center;
+  align-items: center;
   background-color: whitesmoke;
-  min-height: 100vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  color: white;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .Circle {
-  width: 50px;
-  height: 50px;
+  background-image: linear-gradient(to right,blue,indigo,violet);
   border-radius: 50%;
-  background-image: linear-gradient(to right,blue,indigo,violet); 
+  height: 50px;
+  width: 50px;
 }
 
+.Curved-Arrow {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-right: 19px solid red;
+  transform: rotate(10deg);
+}
+.Curved-Arrow:after {
+  content: "";
+  position: absolute;
+  border: 0 solid transparent;
+  border-top: 3px solid red;
+  border-radius: 210px 0 0 0;
+  top: -28px;
+  left: -29px;
+  width: 32px;
+  height: 32px;
+  transform: rotate(45deg);
+}
 
+.Fade {
+  animation: fader infinite 10s;
+  pointer-events: none;
+}
+
+@keyframes fader {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 10%;
+  }
+}
 
 .Logo {
   height: 60px;
 }
 
-.Rectangle {
-  width: 200px;
+.Oval {
+  background: #7C9DF1;
+  border-radius: 100px/50px;
   height: 50px;
-  background: red;
+  width: 100px;
+}
+
+.Rectangle {
+  background:#0B7B20;
+  height: 50px;
+  width: 200px;  
 }
 
 .Spacing {
@@ -52,7 +93,77 @@
 }
 
 .Square {
-  height: 50px;
-  width: 50px;
   background: blue;
+  height: 50px;
+  width: 50px;  
+}
+
+.Trapezoid {
+  border-bottom: 60px solid #A9ABB0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  height: 0;
+  width: 60px;
+}
+
+.Triangle-Bottomleft {
+  border-bottom: 70px solid #F28912;
+  border-right: 70px solid transparent;
+  height: 0;
+  width: 0;
+  
+  
+}
+
+.Triangle-Bottomright {
+  width: 0;
+  height: 0;
+  border-bottom: 70px solid #560D9E;
+  border-left: 70px solid transparent;
+}
+
+.Triangle-Down {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 70px solid #AACC3B;
+}
+
+.Triangle-Left {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 50px solid #0E11AF;
+}
+
+.Triangle-Right {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 50px solid #F2D34F;
+}
+
+.Triangle-Topleft {
+  width: 0;
+  height: 0;
+  border-top: 70px solid #EA8CC3;
+  border-right: 70px solid transparent;
+}
+
+.Triangle-Topright {
+  width: 0;
+  height: 0;
+  border-top: 70px solid #89051F;
+  border-left: 70px solid transparent;
+}
+
+.Triangle-Up {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 60px solid #6DDFF4;
 }
