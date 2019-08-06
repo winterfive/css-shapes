@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: whitesmoke;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -9,13 +9,12 @@
   color: white;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 10s linear;
-  height: 80px;
+.Spin {
+  animation: spin infinite 10s linear;
   pointer-events: none;
 }
 
-@keyframes App-logo-spin {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
@@ -24,8 +23,18 @@
   }
 }
 
-.Shape {
-  padding: 2px;
+.Logo {
+  height: 60px;
+}
+
+.Rectangle {
+  width: 200px;
+  height: 50px;
+  background: red;
+}
+
+.Spacing {
+  margin: 10px;
 }
 
 .Square {

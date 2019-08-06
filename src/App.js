@@ -5,8 +5,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <img src={logo} className="App-logo Shape" alt="logo" />
-      <div className="Square Shape" alt="Blue Square"></div>
+      <img src={logo} className="Logo Spin Spacing" alt="logo" />
+      <div className="Square Spacing Spin" alt="Blue Square"></div>
+      <div className="Rectangle Spacing Spin" alt="Red Rectangle"></div>
     </div>
   );
 }
