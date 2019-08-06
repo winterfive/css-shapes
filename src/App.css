@@ -17,6 +17,15 @@
   width: 50px;
 }
 
+.Cone {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 100px solid #6C055B;
+  border-radius: 50%;
+}
+
 .Curved-Arrow {
   position: relative;
   width: 0;
@@ -38,10 +47,84 @@
   transform: rotate(45deg);
 }
 
-.Hexagon {
+.Cut-Diamond {
+  border-style: solid;
+  border-color: transparent transparent #EFD3F6 transparent;
+  border-width: 0 25px 25px 25px;
+  height: 0;
+  width: 50px;
+  box-sizing: content-box;
+  position: relative;
+  top: -40px;
+}
+.Cut-Diamond:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #EFD3F6 transparent transparent transparent;
+  border-width: 70px 50px 0 50px;
+}
+
+.Diamond {
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-bottom: 50px solid #6DDFF4;
+  position: relative;
+  top: -50px;
+}
+.Diamond:after {
+  width: 0;
+  height: 0;
+  border: 30px solid transparent;
+  border-top: 50px solid #6DDFF4;
+  content: "";
+  left: -29px;
+  position: absolute;
+  top: 50px;
+}
+
+.Egg {
+  display: block;
+  width: 56px;
+  height: 80px;
+  background-image: linear-gradient(pink, yellow, lime, #E2A9F3);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.Heart {
+  position: relative;
   width: 100px;
-  height: 55px;
+  height: 90px;
+}
+.Heart:before,
+.Heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: linear-gradient(to right, red 85%, blue);
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.Heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+
+.Hexagon {
   background: #3D85F4;
+  height: 55px;
+  width: 100px;  
   position: relative;
 }
 .Hexagon:before {
@@ -67,12 +150,81 @@
   border-top: 29px solid #3D85F4;
 }
 
+.Lock {
+  font-size: 8px;
+  position: relative;
+  width: 18em;
+  height: 13em;
+  border-radius: 2em;
+  top: 10em;
+  box-sizing: border-box;
+  border: 3.5em solid #064791;
+  border-right-width: 7.5em;
+  border-left-width: 7.5em;
+  margin: 0 0 6rem 0;
+}
+.Lock:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: 2.5em solid #064791;
+  width: 14em;
+  height: 12em;
+  left: 50%;
+  margin-left: -7em;
+  top: -12em;
+  border-top-left-radius: 7em;
+  border-top-right-radius: 7em;
+}
+.Lock:after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: 1em solid #064791;
+  width: 5em;
+  height: 8em;
+  border-radius: 2.5em;
+  left: 50%;
+  top: -1em;
+  margin-left: -2.5em;
+}
+
 .Logo {
   height: 60px;
 }
 
+.Magnifying-Glass {
+  font-size: 10em;
+  display: inline-block;
+  width: 0.4em;
+  box-sizing: content-box;
+  height: 0.4em;
+  border: 0.1em solid #7E7C7E;
+  position: relative;
+  border-radius: 0.35em;
+}
+.Magnifying-Glass:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background: #7E7C7E;
+  width: 0.35em;
+  height: 0.08em;
+  transform: rotate(45deg);
+}
+
+.Moon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #9ED9FC;
+}
+
 .Octagon {
-  width: 98px;
+  width: 96px;
   height: 40px;
   background: #000;
   position: relative;
@@ -158,6 +310,44 @@
   }
 }
 
+.Space-Invader {
+  box-shadow: 0 0 0 1em red,
+  0 1em 0 1em red,
+  -2.5em 1.5em 0 .5em red,
+  2.5em 1.5em 0 .5em red,
+  -3em -3em 0 0 red,
+  3em -3em 0 0 red,
+  -2em -2em 0 0 red,
+  2em -2em 0 0 red,
+  -3em -1em 0 0 red,
+  -2em -1em 0 0 red,
+  2em -1em 0 0 red,
+  3em -1em 0 0 red,
+  -4em 0 0 0 red,
+  -3em 0 0 0 red,
+  3em 0 0 0 red,
+  4em 0 0 0 red,
+  -5em 1em 0 0 red,
+  -4em 1em 0 0 red,
+  4em 1em 0 0 red,
+  5em 1em 0 0 red,
+  -5em 2em 0 0 red,
+  5em 2em 0 0 red,
+  -5em 3em 0 0 red,
+  -3em 3em 0 0 red,
+  3em 3em 0 0 red,
+  5em 3em 0 0 red,
+  -2em 4em 0 0 red,
+  -1em 4em 0 0 red,
+  1em 4em 0 0 red,
+  2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 75px 70px 135px;
+}
+
 .Spin-Slow {
   animation: spin infinite 20s linear;
   pointer-events: none;
@@ -166,7 +356,7 @@
 .Square {
   background: blue;
   height: 50px;
-  width: 50px;  
+  width: 50px;
 }
 
 .Star-Five {

@@ -21,12 +21,20 @@ function App() {
       <div className="Curved-Arrow Spacing" alt="A curved arrow"></div>
       <div className="Trapezoid Spacing" alt="Grey Trapezoid"></div>
       <div className="Parallelogram Spacing" alt="Yellow Parallelogram"></div>
-      <div className="Star-Six Spacing" alt="Light Green Six sided Star"></div>
-      <div className="Star-Five Spacing" alt="Red Five pointed Star"></div>
+      <div className="Star-Six Spacing" alt="Light Green Six-sided Star"></div>
+      <div className="Star-Five Spacing" alt="Red Five-pointed Star"></div>
       <div className="Pentagon Spacing" alt="Red Pentagon"></div>
       <div className="Hexagon Spacing" alt="Blue Hexagon"></div>
       <div className="Octagon Spacing" alt="Black Octagon"></div>
-
+      <div className="Heart Spacing" alt="Purple Heart"></div>
+      <div className="Diamond Spacing" alt="Blue Diamond"></div>
+      <div className="Cut-Diamond Spacing" alt="Pale Purple Cut Diamond"></div>
+      <div className="Egg Spacing" alt="Easter Egg"></div>
+      <div className="Magnifying-Glass Spacing" alt="Magnifying Glass Symbol"></div>
+      <div className="Moon Spacing" alt="Blue Moon"></div>
+      <div className="Space-Invader Spacing" alt="Red Eight bit pixel space invader"></div>
+      <div className="Cone Spacing" alt="Cone"></div>
+      <div className="Lock Spacing" alt="Lock Symbol"></div>
     </div>
   );
 }
