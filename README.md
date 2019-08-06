@@ -1,3 +1,8 @@
+## CSS SHAPES
+![Lots of shapes made with vanilla CSS](https://user-images.githubusercontent.com/22779199/62580226-afb2ef00-b873-11e9-9aec-7ae8fd2c9b1b.png)
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
