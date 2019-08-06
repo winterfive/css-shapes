@@ -30,8 +30,11 @@ function App() {
       <div className="Diamond Spacing" alt="Blue Diamond"></div>
       <div className="Cut-Diamond Spacing" alt="Pale Purple Cut Diamond"></div>
       <div className="Egg Spacing" alt="Easter Egg"></div>
-      <div className="Space-Invader Spacing" alt="Red Eight bit pixel space invader"></div>
       <div className="Magnifying-Glass Spacing" alt="Magnifying Glass Symbol"></div>
+      <div className="Moon Spacing" alt="Blue Moon"></div>
+      <div className="Space-Invader Spacing" alt="Red Eight bit pixel space invader"></div>
+      <div className="Cone Spacing" alt="Cone"></div>
+      <div className="Lock Spacing" alt="Lock Symbol"></div>
     </div>
   );
 }
