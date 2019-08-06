@@ -7,7 +7,8 @@ function App() {
     <div className="App">
       <img src={logo} className="Logo Spin Spacing" alt="logo" />
       <div className="Square Spacing Spin" alt="Blue Square"></div>
-      <div className="Rectangle Spacing Spin" alt="Red Rectangle"></div>
+      <div className="Rectangle Spacing Spin-Slow" alt="Red Rectangle"></div>
+      <div className="Circle Spacing Spin" alt="Green Circle"></div>
     </div>
   );
 }
